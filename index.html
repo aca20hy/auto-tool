@@ -27,24 +27,6 @@
   }
   h1 { font-size: 22px; margin-bottom: 8px; color: #fff; }
   .sub { font-size: 13px; color: #888; margin-bottom: 32px; }
-  .section {
-    background: #111;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #222;
-  }
-  .label { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
-  .code {
-    font-size: 22px;
-    font-family: "SF Mono", "Fira Code", monospace;
-    color: #4ade80;
-    letter-spacing: 1px;
-    word-break: break-all;
-    background: #0a0a0a;
-    padding: 12px;
-    border-radius: 8px;
-  }
   .btn {
     display: inline-block;
     width: 100%;
@@ -68,25 +50,16 @@
   <h1>自动助手</h1>
   <p class="sub">Android 小工具</p>
 
-  <div class="section">
-    <div class="label">验证码</div>
-    <div class="code" id="code">加载中...</div>
-  </div>
-
   <a class="btn" id="download" href="app-release.apk" download>下载 APK</a>
 
   <div class="steps">
     <p><span>1</span> 点击上方按钮下载 APK 并安装</p>
-    <p><span>2</span> 打开 App，输入上方验证码登录</p>
+    <p><span>2</span> 打开 App，使用付费后获取的验证码登录</p>
     <p><span>3</span> 在设置页配置识别目标范围</p>
     <p><span>4</span> 开启无障碍服务和悬浮窗权限</p>
-    <p><span>5</span> 打开目标页面，点击悬浮窗的"开始刷新"</p>
+    <p><span>5</span> 打开目标页面，点击悬浮窗的开始</p>
   </div>
 </div>
 
-<script>
-const CODE = "aigSBYOQNg4.pxWa_MJxNqnlfG8YO4UbIA";
-document.getElementById("code").textContent = CODE;
-</script>
 </body>
 </html>
