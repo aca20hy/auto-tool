@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具下载</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 40px 32px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+  }
+  h1 { font-size: 22px; margin-bottom: 8px; color: #fff; }
+  .sub { font-size: 13px; color: #888; margin-bottom: 32px; }
+  .section {
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+  }
+  .label { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+  .code {
+    font-size: 22px;
+    font-family: "SF Mono", "Fira Code", monospace;
+    color: #4ade80;
+    letter-spacing: 1px;
+    word-break: break-all;
+    background: #0a0a0a;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background: #4ade80;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover { background: #22c55e; }
+  .steps { text-align: left; font-size: 13px; color: #999; line-height: 2; margin-top: 24px; }
+  .steps span { color: #4ade80; font-weight: 600; margin-right: 6px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>自动助手</h1>
+  <p class="sub">Android 小工具</p>
+
+  <div class="section">
+    <div class="label">验证码</div>
+    <div class="code" id="code">加载中...</div>
+  </div>
+
+  <a class="btn" id="download" href="app-release.apk" download>下载 APK</a>
+
+  <div class="steps">
+    <p><span>1</span> 点击上方按钮下载 APK 并安装</p>
+    <p><span>2</span> 打开 App，输入上方验证码登录</p>
+    <p><span>3</span> 在设置页配置识别目标和时间范围</p>
+    <p><span>4</span> 开启无障碍服务和悬浮窗权限</p>
+    <p><span>5</span> 打开目标页面，点击悬浮窗的"开始刷新"</p>
+  </div>
+</div>
+
+<script>
+const CODE = "aigSBYOQNg4.pxWa_MJxNqnlfG8YO4UbIA";
+document.getElementById("code").textContent = CODE;
+</script>
+</body>
+</html>
